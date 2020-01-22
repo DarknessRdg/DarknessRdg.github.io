@@ -1,26 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+/**
+ * Materialize CSS: See https://materializecss.com/
+ */
+import '../node_modules/materialize-css/dist/css/materialize.min.css'
+import '../node_modules/material-icons/iconfont/material-icons.css'
+
+import "./styles.css"
+
+
+import Routes from './routes/routes'
+
+const App = () => <Routes/>
 
 export default App;

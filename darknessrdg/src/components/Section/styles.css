@@ -1,0 +1,22 @@
+.section {
+    padding-top: 5rem !important;
+    min-height: 94vh;
+}
+
+.section-title {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.section-title::before {
+    position: absolute;
+    content: "";
+    width: 114%;
+    left: -5%;
+    bottom: 4px;
+    height: 10px;
+    z-index: -1;
+    background-color: #8CABF9;
+    border-radius: 15px 0px 15px 0px;
+}
