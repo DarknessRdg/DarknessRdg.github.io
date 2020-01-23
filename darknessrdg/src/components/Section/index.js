@@ -9,14 +9,10 @@ export default (props) => (
                 <h3 className="center bold section-title"><span>{props.title}</span></h3>
             </div>
 
-            <div className="row center">
-                <div className="col s12 m6">
-                    {props.left}
-                </div>
-                <div className="col s12 m6">
-                    {props.right}
-                </div>
+            <div className="center">
+                {props.body}
             </div>
+
         </div>
     </div>
 )
