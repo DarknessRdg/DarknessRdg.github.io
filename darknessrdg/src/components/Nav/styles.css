@@ -1,0 +1,23 @@
+.nav-transparent {
+    background-color: transparent !important;
+    box-shadow: none;
+}
+
+.nav-transparent * {
+    color: white;
+}
+
+.nav-white {
+    background-color: #fff;
+}
+
+.nav-white * {
+    color: #333;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
