@@ -1,0 +1,18 @@
+.black-cover {
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.bg-cover {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.v-aling-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h-vh {
+    min-height: 100vh;
+}
