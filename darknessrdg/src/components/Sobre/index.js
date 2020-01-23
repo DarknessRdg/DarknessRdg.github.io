@@ -1,15 +1,30 @@
 import React from 'react'
 
 import Section from '../Section'
+import Esquerda from './Esquerda'
+import Direita from './Direita'
 
+
+const Conteudo = () => {
+    return (
+        <div className="row">
+            <div className="col m12 l6">
+                <Esquerda />
+            </div>
+
+            <div className="col m12 l6">
+                <Direita />
+            </div>
+        </div>
+    )
+}
 
 export default () => {
     return (
-        <Section 
-            id="sobre" 
-            title="Sobre mim" 
-            left={<h1>esquerda</h1>} 
-            right={<h1>direita</h1>} 
-            />
+        <Section
+            id="sobre"
+            title="Sobre mim"
+            body={<Conteudo />}
+        />
     )
 }
