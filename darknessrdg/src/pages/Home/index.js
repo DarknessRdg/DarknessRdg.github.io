@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import M from 'materialize-css'
 
 import Sobre from '../../components/Sobre'
+import Banner from '../../components/Banner'
 
 
 export default () => {
@@ -11,6 +12,7 @@ export default () => {
 
     return (
         <>
+            <Banner />
             <Sobre />
         </>
     )
