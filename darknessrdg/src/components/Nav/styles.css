@@ -21,3 +21,7 @@ nav {
     left: 0;
     right: 0;
 }
+
+.active {
+    color: red;
+}
