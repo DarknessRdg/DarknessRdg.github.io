@@ -3,6 +3,7 @@ import M from 'materialize-css'
 
 import Sobre from '../../components/Sobre'
 import Banner from '../../components/Banner'
+import Skills from '../../components/Skills'
 
 
 export default () => {
@@ -14,6 +15,7 @@ export default () => {
         <>
             <Banner />
             <Sobre />
+            <Skills />
         </>
     )
 }
