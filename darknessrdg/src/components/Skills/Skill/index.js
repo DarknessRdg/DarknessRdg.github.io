@@ -1,0 +1,14 @@
+import React from 'react'
+
+
+export default (props) =>
+    <div>
+        <p className="bold d-inline grey-text text-darken-2">
+            {props.nome}
+            <span className="right">{props.porcentagem}%</span>
+        </p>
+
+        <div className="progress white">
+            <div className="determinate blue" style={{ "width": props.porcentagem + '%' }}></div>
+        </div>
+    </div>
