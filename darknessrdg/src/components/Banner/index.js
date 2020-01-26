@@ -5,11 +5,10 @@ import BannerImg from '../../assets/banner.jpeg'
 
 
 const ADJETIVOS = [
-    'Web Developer',
-    'Competitive Programmer',
-    'Gamer',
-    'Python Lover',
-    'Judoka'
+    'Desenvolvedor Web',
+    'Programador Competitivo',
+    'Entusiasta de Python',
+    'Gamer'
 ]
 
 
@@ -45,7 +44,6 @@ export default () => {
         setAdjetivoAtual(ADJETIVOS[indexAdjetivo])
 
         await novoTempo(tempoEspera)
-
     }
 
     async function digitarNovaPalavra() {
@@ -65,33 +63,39 @@ export default () => {
     }, [adjetivoAtual])
 
     return (
-        <div id="banner" className="bg-cover" style={{ 'backgroundImage': `url(${BannerImg})` }}>
-            <div className="black-cover">
-                <div className="h-vh v-aling-center container">
-                    <div className="row center">
-                        <h2 className="m-0 white-text bol">Eu sou {palavra}<span>|</span></h2>
-                        <h6 className="grey-text text-lighten-1 mt-4">
-                            Gamer, judoka, violonista por paixão e
-                        </h6>
-                        <h6 className="grey-text text-lighten-1">
-                            <strong className="bold">Progamador</strong> nas horas vagas.
-                        </h6>
-                        <div className="links-content">
-                            <span>
-                                <a href="https://github.com/DarknessRdg/" className="white-text">
-                                    <i className="fab fa-github"></i>
-                                </a>
-                            </span>
-                            <span>
-                                <a href="https://www.facebook.com/luan.dasilva.925" className="white-text">
-                                    <i className="fab fa-facebook-f"></i>
-                                </a>
-                            </span>
-                            <span>
-                                <a href="https://www.instagram.com/luan_26/" className="white-text">
-                                    <i className="fab fa-instagram"></i>
-                                </a>
-                            </span>
+        <div id="banner" className="parallax-container">
+            <div className="parallax bg-cover">
+                <img src={BannerImg} alt="bg" />
+            </div>
+
+            <div className="bg-cover">
+                <div className="black-cover">
+                    <div className="h-vh v-aling-center container">
+                        <div className="row center">
+                            <h2 className="m-0 white-text bol">Eu sou {palavra}<span>|</span></h2>
+                            <h6 className="grey-text text-lighten-1 mt-4">
+                                Gamer por paixão e
+                            </h6>
+                            <h6 className="grey-text text-lighten-1">
+                                <strong className="bold">Progamador</strong> nas horas vagas.
+                            </h6>
+                            <div className="links-content">
+                                <span>
+                                    <a href="https://github.com/DarknessRdg/" className="white-text">
+                                        <i className="fab fa-github"></i>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="https://www.facebook.com/luan.dasilva.925" className="white-text">
+                                        <i className="fab fa-facebook-f"></i>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="https://www.instagram.com/luan_26/" className="white-text">
+                                        <i className="fab fa-instagram"></i>
+                                    </a>
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
