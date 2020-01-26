@@ -16,3 +16,7 @@
 #banner .links-content a:hover {
     color: #1957F3 !important;
 }
+
+.parallax-container {
+    height: 100vh;
+}
