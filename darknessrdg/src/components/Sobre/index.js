@@ -7,7 +7,7 @@ import Direita from './Direita'
 
 const Conteudo = () => {
     return (
-        <div className="row">
+        <div className="row mb-0">
             <div className="col m12 l6">
                 <Esquerda />
             </div>
