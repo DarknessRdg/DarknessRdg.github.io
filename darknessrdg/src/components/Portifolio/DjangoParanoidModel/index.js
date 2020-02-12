@@ -1,12 +1,8 @@
 import React from "react";
 
-const modal = () => (
-  <div className="green">
-    <h1 className="center">Oalssssssssss</h1>
-  </div>
-);
+import modal from "./modal";
 
-const icon = () => <i class="fab fa-python"></i>;
+const icon = () => <i className="fas fa-cogs"></i>;
 
 const data = {
   titulo: "Django Paranoid Model",
