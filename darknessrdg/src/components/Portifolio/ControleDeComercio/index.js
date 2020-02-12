@@ -6,12 +6,12 @@ const modal = () => (
   </div>
 );
 
-const icon = () => <i className="fas fa-clipboard-list"></i>;
+const icon = () => <i className="fas fa-hand-holding-usd"></i>;
 
 const data = {
-  titulo: "Controle de faltas",
+  titulo: "Controle de comércio",
   descricao:
-    "Projeito para registrar faltas dos aluno do proejto de extensão do IFPI.",
+    "Projeito controlar caixa de um comércio com impressão de notinhas não fiscal.",
   conteudoModal: modal,
   icon
 };

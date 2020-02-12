@@ -4,19 +4,14 @@ import Item from "./Item";
 
 import DjangoParanoidModel from "./DjangoParanoidModel";
 import ControleDeFaltas from "./ControleDeFaltas";
+import ControleDeComercio from "./ControleDeComercio";
 
-const todos = [DjangoParanoidModel, ControleDeFaltas];
+const todos = [DjangoParanoidModel, ControleDeFaltas, ControleDeComercio];
 
 const Conteudo = () => (
   <div className="portifolio-content">
     {todos.map((current, index) => (
-      <Item id={index} portifolio={current} />
-    ))}
-    {todos.map((current, index) => (
-      <Item id={index} portifolio={current} />
-    ))}
-    {todos.map((current, index) => (
-      <Item id={index} portifolio={current} />
+      <Item key={index} id={index} portifolio={current} />
     ))}
   </div>
 );
