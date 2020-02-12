@@ -72,3 +72,9 @@
 .modal-content p {
   margin-top: .3rem;
 }
+
+.modal-content img {
+  width: 90%;
+  margin-left: 5%;
+  height: auto;
+}

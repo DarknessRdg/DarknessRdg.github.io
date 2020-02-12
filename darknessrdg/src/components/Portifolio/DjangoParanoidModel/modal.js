@@ -24,13 +24,21 @@ export default () => (
     <div className="mt-3 row ml-0">
       <div className="col s12 m6 p-0 mt-2">
         <i className="fas fa-book mr-2 fa-2x align-middle"></i>
-        <a href="https://darknessrdg.github.io/django-paranoid-model/">
+        <a
+          href="https://darknessrdg.github.io/django-paranoid-model/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Documentação do pacote
         </a>
       </div>
       <div className="col s12 m6 p-0 mt-2">
         <i className="fab fa-github-alt mr-2 fa-2x align-middle"></i>
-        <a href="https://github.com/DarknessRdg/django-paranoid-model/">
+        <a
+          href="https://github.com/DarknessRdg/django-paranoid-model/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Repositório do código
         </a>
       </div>

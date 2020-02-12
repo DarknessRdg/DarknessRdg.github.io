@@ -1,10 +1,6 @@
 import React from "react";
 
-const modal = () => (
-  <div className="green">
-    <h1 className="center">Oalssssssssss</h1>
-  </div>
-);
+import modal from "./modal";
 
 const icon = () => <i className="fas fa-hand-holding-usd"></i>;
 
