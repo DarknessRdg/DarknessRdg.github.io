@@ -5,6 +5,8 @@ import Sobre from '../../components/Sobre'
 import Banner from '../../components/Banner'
 import Skills from '../../components/Skills'
 import Portifolio from '../../components/Portifolio'
+import Contato from '../../components/Contato'
+import Footer from '../../components/Footer'
 
 
 export default () => {
@@ -18,6 +20,8 @@ export default () => {
             <Sobre />
             <Skills />
             <Portifolio /> 
+            <Contato />
+            <Footer />
         </>
     )
 }
