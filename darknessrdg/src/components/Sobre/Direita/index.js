@@ -1,6 +1,7 @@
 import React from 'react'
 import './styles.css'
 
+import Curriculo from '../../../assets/luan da silva rodrigues.pdf'
 
 export default () => {
     return (
@@ -34,13 +35,13 @@ export default () => {
             </div>
 
             <div className="mt-5 pt-5 left-align row">
-                <button type="button" className="col s5 blue waves-effect waves-light btn-large">
+                <a href={Curriculo} target="_blank" type="button" className="col s5 blue waves-effect waves-light btn-large">
                     <span className="v-aling-center">
                         DOWNLOAD CV
                         <i className="pl-2 material-icons hide-on-small-only">description</i>
                     </span>
 
-                </button>
+                </a>
 
                 <button type="button" className="col s5 offset-s1 blue waves-effect waves-light btn-large">
                     <span className="v-aling-center">
