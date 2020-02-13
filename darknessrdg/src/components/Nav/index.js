@@ -32,7 +32,7 @@ export default () => {
     return (
         <nav ref={nav} className={navClass + ' hide-on-med-and-down'}>
             <div className="nav-wrapper navbar container">
-                <a href="#!" className="brand-logo">Luan</a>
+                <a href="#banner" className="brand-logo">Luan</a>
                 <ul id="nav-mobile" className="right">
                     <Scrollspy
                         items={scrollspsyItems}
@@ -42,7 +42,7 @@ export default () => {
                         <li><a href="#banner">Home</a></li>
                         <li><a href="#sobre">Sobre</a></li>
                         <li><a href="#portifolio">Portifólio</a></li>
-                        <li><a href="#!">Contato</a></li>
+                        <li><a href="#contato">Contato</a></li>
                     </Scrollspy>
                 </ul>
             </div>
