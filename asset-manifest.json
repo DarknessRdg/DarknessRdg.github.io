@@ -1,32 +1,33 @@
 {
   "files": {
-    "main.css": "/static/css/main.320d940f.chunk.css",
-    "main.js": "/static/js/main.9f3700ae.chunk.js",
-    "main.js.map": "/static/js/main.9f3700ae.chunk.js.map",
+    "main.css": "/static/css/main.6ffb058a.chunk.css",
+    "main.js": "/static/js/main.38beacd3.chunk.js",
+    "main.js.map": "/static/js/main.38beacd3.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.23c8ef9d.js",
     "runtime-main.js.map": "/static/js/runtime-main.23c8ef9d.js.map",
     "static/css/2.f85383cc.chunk.css": "/static/css/2.f85383cc.chunk.css",
-    "static/js/2.e65932c6.chunk.js": "/static/js/2.e65932c6.chunk.js",
-    "static/js/2.e65932c6.chunk.js.map": "/static/js/2.e65932c6.chunk.js.map",
+    "static/js/2.33c86af0.chunk.js": "/static/js/2.33c86af0.chunk.js",
+    "static/js/2.33c86af0.chunk.js.map": "/static/js/2.33c86af0.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.0651e2bffe37545c8888a40b45bd6c84.js": "/precache-manifest.0651e2bffe37545c8888a40b45bd6c84.js",
+    "precache-manifest.5ac1b0d64ef2bc1d4faa8f3560b361be.js": "/precache-manifest.5ac1b0d64ef2bc1d4faa8f3560b361be.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.f85383cc.chunk.css.map": "/static/css/2.f85383cc.chunk.css.map",
-    "static/css/main.320d940f.chunk.css.map": "/static/css/main.320d940f.chunk.css.map",
-    "static/js/2.e65932c6.chunk.js.LICENSE": "/static/js/2.e65932c6.chunk.js.LICENSE",
+    "static/css/main.6ffb058a.chunk.css.map": "/static/css/main.6ffb058a.chunk.css.map",
+    "static/js/2.33c86af0.chunk.js.LICENSE": "/static/js/2.33c86af0.chunk.js.LICENSE",
     "static/media/material-icons.css": "/static/media/MaterialIcons-Regular.d120c85b.ttf",
     "static/media/banner.jpeg": "/static/media/banner.b829ab88.jpeg",
     "static/media/controle_comercio.png": "/static/media/controle_comercio.696f043f.png",
     "static/media/controle_comercio_compra.png": "/static/media/controle_comercio_compra.cc50543c.png",
     "static/media/controle_faltas.png": "/static/media/controle_faltas.19258ce4.png",
     "static/media/controle_faltas_admin.png": "/static/media/controle_faltas_admin.d37ba9cb.png",
+    "static/media/luan da silva rodrigues.pdf": "/static/media/luan da silva rodrigues.ba314209.pdf",
     "static/media/me.jpg": "/static/media/me.9a1c8c25.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.23c8ef9d.js",
     "static/css/2.f85383cc.chunk.css",
-    "static/js/2.e65932c6.chunk.js",
-    "static/css/main.320d940f.chunk.css",
-    "static/js/main.9f3700ae.chunk.js"
+    "static/js/2.33c86af0.chunk.js",
+    "static/css/main.6ffb058a.chunk.css",
+    "static/js/main.38beacd3.chunk.js"
   ]
 }
