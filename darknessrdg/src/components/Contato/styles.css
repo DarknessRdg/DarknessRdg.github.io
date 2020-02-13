@@ -1,0 +1,14 @@
+.input-field {
+    margin-top: 1.5rem;
+}
+
+.input-field input:focus+label, .input-field textarea:focus+label {
+    color: #1957f3 !important;
+}
+
+/* label underline focus color */
+
+.input-field input:focus, .input-field textarea:focus {
+    border-bottom: 1px solid #1957f3 !important;
+    box-shadow: 0 1px 0 0 #1957f3 !important
+}
