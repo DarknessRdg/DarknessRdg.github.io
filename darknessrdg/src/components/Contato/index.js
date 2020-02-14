@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./styles.css";
 import M from "materialize-css";
 
@@ -10,6 +10,8 @@ const Conteudo = () => {
   const nome = useRef();
   const email = useRef();
   const mensagem = useRef();
+
+  const [enviandoEmail, setEnviandoEmail] = useState(false);
 
   function showMessage(message, success = true) {
     const color = success ? "green" : "red";
@@ -37,7 +39,11 @@ const Conteudo = () => {
   async function senEmail(e) {
     e.preventDefault();
 
-    if (!areDataValid()) return;
+    setEnviandoEmail(true);
+    if (!areDataValid()) {
+      setEnviandoEmail(false);
+      return;
+    }
 
     const data = {
       subject: nome.current.value,
@@ -55,6 +61,8 @@ const Conteudo = () => {
     } catch (e) {
       showMessage(mensagemDeError, false);
     }
+
+    setEnviandoEmail(false);
   }
 
   return (
@@ -78,8 +86,30 @@ const Conteudo = () => {
         <label htmlFor="mensagem">Sua mensagem</label>
       </div>
       <div className="mt-5">
-        <button className="btn blue btn-large" onClick={e => senEmail(e)}>
-          Enviar
+        <button
+          className={"btn blue btn-large " + (enviandoEmail ? "disabled" : "")}
+          onClick={e => senEmail(e)}
+        >
+          {enviandoEmail ? "" : "Enviar"}
+
+          <div
+            class={
+              "preloader-wrapper small mt-2 " +
+              (enviandoEmail ? "active" : "hide")
+            }
+          >
+            <div class="spinner-layer spinner-blue-only">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div>
+              <div class="gap-patch">
+                <div class="circle"></div>
+              </div>
+              <div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+          </div>
         </button>
       </div>
     </form>
