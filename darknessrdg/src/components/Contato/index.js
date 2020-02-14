@@ -1,12 +1,61 @@
 import React, { useRef } from "react";
 import "./styles.css";
+import M from "materialize-css";
 
 import Section from "../Section";
+
+import Email from "../../services/Email";
 
 const Conteudo = () => {
   const nome = useRef();
   const email = useRef();
   const mensagem = useRef();
+
+  function showMessage(message, success = true) {
+    const color = success ? "green" : "red";
+    M.toast({ html: message, classes: "bottom " + color });
+  }
+
+  function areDataValid() {
+    let feedBack;
+    // eslint-disable-next-line
+    var emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    if (!nome.current.value) feedBack = "Nome não pode estar vazio";
+    else if (!email.current.value) feedBack = "Qual seu email?";
+    else if (!mensagem.current.value) feedBack = "Digite uma mensagem";
+    else if (!email.current.value.match(emailRegex))
+      feedBack = "Email inválido";
+
+    if (feedBack) {
+      showMessage(feedBack, false);
+      return false;
+    }
+    return true;
+  }
+
+  async function senEmail(e) {
+    e.preventDefault();
+
+    if (!areDataValid()) return;
+
+    const data = {
+      subject: nome.current.value,
+      from: email.current.value,
+      message: mensagem.current.value
+    };
+
+    const mensagemDeError = "Ocorreu um error, tente novamente mais tarde!";
+    const mensagemDeSucesso = "Email enviado!";
+    try {
+      const r = await Email.post("/send-email/", data);
+
+      if (r.status === 200) showMessage(mensagemDeSucesso);
+      else showMessage(mensagemDeError, false);
+    } catch (e) {
+      showMessage(mensagemDeError, false);
+    }
+  }
 
   return (
     <form className="container">
@@ -29,7 +78,9 @@ const Conteudo = () => {
         <label htmlFor="mensagem">Sua mensagem</label>
       </div>
       <div className="mt-5">
-        <button className="btn blue btn-large">Enviar</button>
+        <button className="btn blue btn-large" onClick={e => senEmail(e)}>
+          Enviar
+        </button>
       </div>
     </form>
   );
