@@ -17,10 +17,10 @@ export default () => (
     </p>
     <div className="row">
       <div className="mt-2 col s12 m12 l6">
-        <img src={Banner} className="z-depth-1" alt="home controle de faltas" />
+        <img src={Banner} className="z-depth-1 materialboxed" alt="home controle de faltas" />
       </div>
       <div className="mt-2 col s12 m12 l6">
-        <img src={Admin} className="z-depth-1" alt="admin controle de faltas" />
+        <img src={Admin} className="z-depth-1 materialboxed" alt="admin controle de faltas" />
       </div>
     </div>
 

@@ -25,10 +25,23 @@ export default () => (
     </p>
     <div className="row mt-3">
       <div className="col s12 m6">
-        <img src={Banner} alt="home controle comércio" />
+        <img src={Banner} alt="home controle comércio" className="materialboxed z-depth-1" />
       </div>
       <div className="col s12 m6">
-        <img src={Compra} alt="venda controle comércio" />
+        <img src={Compra} alt="venda controle comércio" className="materialboxed z-depth-1" />
+      </div>
+    </div>
+    
+    <div className="mt-3 row ml-0">
+      <div className="col s12 m6 p-0 mt-2">
+        <i className="fab fa-github-alt mr-2 fa-2x align-middle"></i>
+        <a
+          href="https://github.com/DarknessRdg/controle_comercio/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Repositório do código
+        </a>
       </div>
     </div>
   </div>
