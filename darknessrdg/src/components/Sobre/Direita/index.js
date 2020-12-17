@@ -32,7 +32,7 @@ export default () => {
         </div>
         <div className="col s12 m6">
           <h6 className="grey-text text-darken-2">
-            <span className="bold black-text">Idade:</span> 19
+            <span className="bold black-text">Idade:</span> 20
           </h6>
         </div>
         <div className="col s12 m6">
