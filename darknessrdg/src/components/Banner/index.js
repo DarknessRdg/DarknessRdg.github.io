@@ -77,7 +77,7 @@ export default () => {
                                 Gamer por paixão e
                             </h6>
                             <h6 className="grey-text text-lighten-1">
-                                <strong className="bold">Progamador</strong> nas horas vagas.
+                                <strong className="bold">Programador</strong> nas horas vagas.
                             </h6>
                             <div className="links-content">
                                 <span>
