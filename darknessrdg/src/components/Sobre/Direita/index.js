@@ -3,7 +3,27 @@ import "./styles.css";
 
 import Curriculo from "../../../assets/luan da silva rodrigues.pdf";
 
+function calculateAge(birthMonth, birthDay, birthYear) {
+  var currentDate = new Date(2021, 9, 24);
+  var currentYear = currentDate.getFullYear();
+  var currentMonth = currentDate.getMonth();
+  var currentDay = currentDate.getDate(); 
+  var calculatedAge = currentYear - birthYear;
+
+  if (currentMonth < birthMonth) {
+      calculatedAge--;
+  }
+
+  if (birthMonth === currentMonth && currentDay < birthDay) {
+      calculatedAge--;
+  }
+
+  return calculatedAge;
+}
+
 export default () => {
+  const age = calculateAge(9, 26, 2000);
+
   return (
     <div id="sobre-mim-texto">
       <h4 className="left-align mt-5">Olá</h4>
@@ -32,7 +52,7 @@ export default () => {
         </div>
         <div className="col s12 m6">
           <h6 className="grey-text text-darken-2">
-            <span className="bold black-text">Idade:</span> 20
+            <span className="bold black-text">Idade:</span> {age}
           </h6>
         </div>
         <div className="col s12 m6">
