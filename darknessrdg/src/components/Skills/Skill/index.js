@@ -6,6 +6,7 @@ export default (props) =>
         <p className="bold d-inline grey-text text-darken-2">
             {props.nome}
             <span className="right">{props.porcentagem}%</span>
+            <span className="right mr-3">{props.extra}</span>
         </p>
 
         <div className="progress white">

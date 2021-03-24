@@ -9,15 +9,15 @@ export default () => (
     <p>
       Ele surgiu devido a necessidade de não deletar as instnâncias dos bancos
       de dados visto que manter os dados salvos é algo fundamental para as
-      empresas. Contudo o Django não fornece uma maneira tão trivial para fazer
-      isso.
+      empresas. Contudo o Django não fornece uma uma opção <em>out of the box</em> para fazer
+      isso, fazendo-se necessário o desenvolvedor tomar conta da lógica.
     </p>
     <p>
       Por baixo dos panos, o que ele faz para não deletar os dados é colocar uma
-      máscara quando uma instancia do banco é deleta.
+      máscara quando uma instancia do banco é deletada.
     </p>
     <p>
-      Essa mascarra é um atributo chamado <em className="bold">delete_at</em>.
+      Essa mascarra é um atributo chamado <em className="bold">deleted_at</em>.
       Nele é salvo a data de delete da instnância, e toda vez que uma busca é
       executada no banco os elementos deletados não são considerados.
     </p>
