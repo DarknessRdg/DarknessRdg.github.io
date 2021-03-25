@@ -1,0 +1,56 @@
+.experiencia-content {
+    .data {
+        margin-bottom: 1rem;
+        span {
+            display: inline-block;
+            font-size: 0.8rem;
+            color: #fff;
+            border-radius: 2px;
+            min-width: 3rem;
+            padding: 0 6px;
+            text-align: center;
+            font-size: 1rem;
+            line-height: 22px;
+            height: 22px;
+            margin-right: 18px;
+        }
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+
+    h4, h6 {
+        padding: 0;
+        margin: 7px 0;
+    }
+
+    p {
+        margin-top: 1rem;
+    }
+
+    ul {
+        margin-top: .5rem;
+        padding-left: 2rem;
+
+        li{
+            list-style-type: disc;
+        }        
+    }
+
+    .empresa-content {
+        padding: 0 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .empresa-logo {
+            display: grid;
+            align-content: center;
+            justify-content: center;
+            grid-template-columns: .5fr;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

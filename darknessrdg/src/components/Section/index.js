@@ -8,6 +8,9 @@ export default props => (
         <span>{props.title}</span>
       </h3>
     </div>
-    <div className="center">{props.body}</div>
+    <div className="center">
+      {props.body}
+      {props.children}
+    </div>
   </div>
 );

@@ -93,20 +93,20 @@ const Conteudo = () => {
           {enviandoEmail ? "" : "Enviar"}
 
           <div
-            class={
+            className={
               "preloader-wrapper small mt-2 " +
               (enviandoEmail ? "active" : "hide")
             }
           >
-            <div class="spinner-layer spinner-blue-only">
-              <div class="circle-clipper left">
-                <div class="circle"></div>
+            <div className="spinner-layer spinner-blue-only">
+              <div className="circle-clipper left">
+                <div className="circle"></div>
               </div>
-              <div class="gap-patch">
-                <div class="circle"></div>
+              <div className="gap-patch">
+                <div className="circle"></div>
               </div>
-              <div class="circle-clipper right">
-                <div class="circle"></div>
+              <div className="circle-clipper right">
+                <div className="circle"></div>
               </div>
             </div>
           </div>
@@ -117,7 +117,7 @@ const Conteudo = () => {
 };
 
 export default () => (
-  <div className="grey lighten-4">
+  <div className="">
     <Section id="contato" title="Contato" body={<Conteudo />} />
   </div>
 );

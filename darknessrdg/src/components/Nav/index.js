@@ -7,7 +7,8 @@ const scrollspsyItems = [
     'banner',
     'sobre',
     'portifolio',
-    'contato'
+    'contato',
+    'experiencia'
 ]
 
 export default () => {
@@ -42,6 +43,7 @@ export default () => {
                         <li><a href="#banner">Home</a></li>
                         <li><a href="#sobre">Sobre</a></li>
                         <li><a href="#portifolio">Portifólio</a></li>
+                        <li><a href="#experiencia">Experiências</a></li>
                         <li><a href="#contato">Contato</a></li>
                     </Scrollspy>
                 </ul>
