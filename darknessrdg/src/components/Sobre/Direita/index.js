@@ -4,7 +4,7 @@ import "./styles.css";
 import Curriculo from "../../../assets/luan da silva rodrigues.pdf";
 
 function calculateAge(birthMonth, birthDay, birthYear) {
-  var currentDate = new Date(2021, 9, 24);
+  var currentDate = new Date();
   var currentYear = currentDate.getFullYear();
   var currentMonth = currentDate.getMonth();
   var currentDay = currentDate.getDate(); 
