@@ -18,6 +18,10 @@ export default () => (
         </p>
         <p>
             Vou citar aqui uma lista de tecnologias que tive a oportunidade de trablhar:
+            <div class="chip">Django</div>
+            <div class="chip">Git</div>
+            <div class="chip">Rest</div>
+
             <ul>
                 <li>
                     <span className="bold">Git :</span> trabalhei pela primeira vez utilizando git com uma equipe.

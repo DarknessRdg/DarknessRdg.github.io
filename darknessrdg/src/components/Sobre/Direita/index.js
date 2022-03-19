@@ -57,7 +57,12 @@ export default () => {
         </div>
         <div className="col s12 m6">
           <h6 className="grey-text text-darken-2">
-            <span className="bold black-text">Telefone:</span> (86) 9 9990-1099
+            <span className="bold black-text">WhatsApp:</span> (86) 9 9990-1099
+          </h6>
+        </div>
+        <div className="col s12 m6">
+          <h6 className="grey-text text-darken-2">
+            <span className="bold black-text">Telefone:</span> (86) 9 8175-4954
           </h6>
         </div>
         <div className="col s12">
@@ -88,7 +93,7 @@ export default () => {
           className="col s5 offset-s1 btn blue waves-effect waves-light btn-large"
         >
           <span className="v-aling-center">
-            CONTRATE-ME
+            CONTACT-ME
             <i className="pl-2 material-icons hide-on-small-only">
               assignment_ind
             </i>
