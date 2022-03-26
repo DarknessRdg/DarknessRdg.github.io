@@ -1,16 +1,15 @@
 import React from 'react'
 import './styles.css'
 
-import BannerImg from '../../assets/banner.jpeg'
 import PalavrasDigitadas from './PalavrasDigitadas'
 import SocialLinks from './SocialLinks'
+import config from '../../config';
 
 export default () => {
-
     return (
         <div id="banner" className="parallax-container">
             <div className="parallax bg-cover">
-                <img src={BannerImg} alt="Luan Rodrigues cover" />
+                <img src={config.BANNER_IMG_URL} alt="Luan Rodrigues cover" />
             </div>
 
             <div className="bg-cover">

@@ -1,14 +1,14 @@
 import React from 'react'
 import './styles.css'
 
-import ImagemPerfil from '../../../assets/me.jpg'
+import config from '../../../config'
 
 
 export default () => {
 
     return (
         <div className="about-me-img-content left-align">
-            <img src={ImagemPerfil} alt="Luan Rodrigues"/>
+            <img src={config.ME_PROFILE_IMG_URL} alt="Luan Rodrigues"/>
         </div>
     )
 }

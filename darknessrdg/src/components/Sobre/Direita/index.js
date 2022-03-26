@@ -1,7 +1,6 @@
 import React from "react";
+import config from "../../../config";
 import "./styles.css";
-
-import Curriculo from "../../../assets/luan da silva rodrigues.pdf";
 
 function calculateAge(birthMonth, birthDay, birthYear) {
   var currentDate = new Date();
@@ -75,7 +74,7 @@ export default () => {
 
       <div className="mt-5 pt-5 left-align row">
         <a
-          href={Curriculo}
+          href={config.CURRICULO_PDF_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="col s5 btn blue waves-effect waves-light btn-large"
