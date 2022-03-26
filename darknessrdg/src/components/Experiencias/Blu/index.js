@@ -1,6 +1,20 @@
 import React from 'react';
 import CardEmpresa from '../CardEmpresa';
 
+const TECNOLOGIAS = [
+    'Kotlin',
+    'Spring Boot',
+    'Spring Data JPA',
+    'Kafka',
+    'Microsserviços',
+    'Maven',
+    'PostgreSQL',
+    'TDD',
+    'Teste E2E',
+    'Teste unitário',
+    'Scrum',
+    'Code review'
+]
 
 export default () => (
     <CardEmpresa
@@ -18,18 +32,7 @@ export default () => (
             <div className="mt-3">
                 <p className="mb-2">Tecnologias que tive contato:</p>
                 
-                <span className="chip">Kotlin</span>
-                <span className="chip">Spring Boot</span>
-                <span className="chip">Spring Data JPA</span>
-                <span className="chip">Kafka</span>
-                <span className="chip">Microsserviços</span>
-                <span className="chip">Maven</span>
-                <span className="chip">PostgreSQL</span>
-                <span className="chip">TDD</span>
-                <span className="chip">Teste E2E</span>
-                <span className="chip">Teste unitário</span>
-                <span className="chip">Scrum</span>
-                <span className="chip">Code review</span>
+                {TECNOLOGIAS.map(it => <span className="chip">{it}</span>)}
             </div>
         </div>
     </CardEmpresa>

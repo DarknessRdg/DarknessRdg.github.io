@@ -2,6 +2,21 @@ import React from 'react';
 import CardEmpresa from '../CardEmpresa';
 
 
+const TECNOLOGIAS = [
+    'Django',
+    'Git',
+    'GitLab',
+    'Django Rest Framework',
+    'Pytest',
+    'Celery',
+    'Redis',
+    'Digital Ocean Bucket',
+    'MySQL',
+    'ReactJS',
+    'VueJS',
+    'Teste Unitário'
+]
+
 export default () => (
     <CardEmpresa
         empresa="Infatec"
@@ -23,19 +38,8 @@ export default () => (
             </p>
             <div className="mt-3">
                 <p className="mb-2">Tecnologias que tive contato:</p>
-                
-                <span className="chip">Django</span>
-                <span className="chip">Git</span>
-                <span className="chip">Gitlab</span>
-                <span className="chip">Django Rest Framework</span>
-                <span className="chip">Pytest</span>
-                <span className="chip">Celery</span>
-                <span className="chip">Redis</span>
-                <span className="chip">Digital Ocean Bucket</span>
-                <span className="chip">MySQL</span>
-                <span className="chip">ReactJS</span>
-                <span className="chip">VueJS</span>
-                <span className="chip">Teste Unitário</span>
+
+                {TECNOLOGIAS.map(it => <span className="chip">{it}</span>)}
             </div>
         </div>
     </CardEmpresa>
