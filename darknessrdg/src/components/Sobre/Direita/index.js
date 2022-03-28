@@ -1,10 +1,9 @@
 import React from "react";
+import statics from "../../../statics";
 import "./styles.css";
 
-import Curriculo from "../../../assets/luan da silva rodrigues.pdf";
-
 function calculateAge(birthMonth, birthDay, birthYear) {
-  var currentDate = new Date(2021, 9, 24);
+  var currentDate = new Date();
   var currentYear = currentDate.getFullYear();
   var currentMonth = currentDate.getMonth();
   var currentDay = currentDate.getDate(); 
@@ -33,7 +32,7 @@ export default () => {
           programador web, apaixonado por programação desde quando iniciei minha
           graduação em Análise e Desenvolvimento de Sistemas pelo IFPI em 2018.
           Contudo vi a necessidade de ampliar os meus conhecimentos, por isso
-          decidir trocar de curso e atualmente estou no 4° periodo de Ciências
+          decidir trocar de curso e atualmente estou no 7° periodo de Ciências
           da Computação pela UESPI.
         </p>
       </div>
@@ -57,7 +56,12 @@ export default () => {
         </div>
         <div className="col s12 m6">
           <h6 className="grey-text text-darken-2">
-            <span className="bold black-text">Telefone:</span> (86) 9 9990-1099
+            <span className="bold black-text">WhatsApp:</span> (86) 9 9990-1099
+          </h6>
+        </div>
+        <div className="col s12 m6">
+          <h6 className="grey-text text-darken-2">
+            <span className="bold black-text">Telefone:</span> (86) 9 8175-4954
           </h6>
         </div>
         <div className="col s12">
@@ -70,7 +74,7 @@ export default () => {
 
       <div className="mt-5 pt-5 left-align row">
         <a
-          href={Curriculo}
+          href={statics.CURRICULO_PDF_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="col s5 btn blue waves-effect waves-light btn-large"
@@ -88,7 +92,7 @@ export default () => {
           className="col s5 offset-s1 btn blue waves-effect waves-light btn-large"
         >
           <span className="v-aling-center">
-            CONTRATE-ME
+            CONTACT-ME
             <i className="pl-2 material-icons hide-on-small-only">
               assignment_ind
             </i>

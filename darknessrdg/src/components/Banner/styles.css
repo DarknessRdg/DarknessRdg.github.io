@@ -20,3 +20,8 @@
 .parallax-container {
     height: 100vh;
 }
+
+#banner .parallax img {
+    object-fit: cover;
+    width: 100%;
+}

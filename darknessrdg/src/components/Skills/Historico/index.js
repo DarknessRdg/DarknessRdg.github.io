@@ -15,7 +15,7 @@ export default () => (
         </p>
         <p>
             Sempre gostei de desenvolver projetos reais, e por ter um conhecimento maior em 
-            desenvolvimento web, <em>JavaScript</em> é a segunda lingaugens que eu mais tive
+            desenvolvimento web, <em>JavaScript</em> é a segunda linguagens que eu mais tive
             contato, entretando <em>CSS</em> não é meu forte.
         </p>
     </div>

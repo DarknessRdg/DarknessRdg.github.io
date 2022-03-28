@@ -7,6 +7,7 @@ import Skills from '../../components/Skills'
 import Portifolio from '../../components/Portifolio'
 import Contato from '../../components/Contato'
 import Footer from '../../components/Footer'
+import Experiencias from '../../components/Experiencias'
 
 
 export default () => {
@@ -20,6 +21,7 @@ export default () => {
             <Sobre />
             <Skills />
             <Portifolio /> 
+            <Experiencias />
             <Contato />
             <Footer />
         </>
