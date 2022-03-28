@@ -1,7 +1,6 @@
 import React from "react";
 
-import Banner from "../../../assets/controle_comercio.png";
-import Compra from "../../../assets/controle_comercio_compra.png";
+import statics from "../../../statics";
 
 export default () => (
   <div className="text-justify">
@@ -25,10 +24,10 @@ export default () => (
     </p>
     <div className="row mt-3">
       <div className="col s12 m6">
-        <img src={Banner} alt="home controle comércio" className="materialboxed z-depth-1" />
+        <img src={statics.CONTROLE_COMERCIO_IMG_HOME} alt="home controle comércio" className="materialboxed z-depth-1" />
       </div>
       <div className="col s12 m6">
-        <img src={Compra} alt="venda controle comércio" className="materialboxed z-depth-1" />
+        <img src={statics.CONTROLE_COMERCIO_IMG_VENDAS} alt="venda controle comércio" className="materialboxed z-depth-1" />
       </div>
     </div>
     

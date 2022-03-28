@@ -3,7 +3,7 @@ import './styles.css'
 
 import PalavrasDigitadas from './PalavrasDigitadas'
 import SocialLinks from './SocialLinks'
-import config from '../../config';
+import config from '../../statics';
 
 export default () => {
     return (

@@ -4,8 +4,8 @@ import Skill from '../Skill'
 
 const skills = [
     { nome: 'Python', porcentagem: 90 },
-    { nome: 'C/C++', porcentagem: 50 },
-    { nome: 'Java', porcentagem: 50 },
+    { nome: 'Kotlin', porcentagem: 70 },
+    { nome: 'Spring', porcentagem: 60 },
     { nome: 'JavaScript', porcentagem: 70 },
     { nome: 'Django', porcentagem: 90 },
     { nome: 'ReactJS', porcentagem: 60 },

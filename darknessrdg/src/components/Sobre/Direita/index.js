@@ -1,5 +1,5 @@
 import React from "react";
-import config from "../../../config";
+import statics from "../../../statics";
 import "./styles.css";
 
 function calculateAge(birthMonth, birthDay, birthYear) {
@@ -32,7 +32,7 @@ export default () => {
           programador web, apaixonado por programação desde quando iniciei minha
           graduação em Análise e Desenvolvimento de Sistemas pelo IFPI em 2018.
           Contudo vi a necessidade de ampliar os meus conhecimentos, por isso
-          decidir trocar de curso e atualmente estou no 4° periodo de Ciências
+          decidir trocar de curso e atualmente estou no 7° periodo de Ciências
           da Computação pela UESPI.
         </p>
       </div>
@@ -74,7 +74,7 @@ export default () => {
 
       <div className="mt-5 pt-5 left-align row">
         <a
-          href={config.CURRICULO_PDF_URL}
+          href={statics.CURRICULO_PDF_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="col s5 btn blue waves-effect waves-light btn-large"

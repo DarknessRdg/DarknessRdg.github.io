@@ -1,7 +1,5 @@
 import React from "react";
-
-import Banner from "../../../assets/controle_faltas.png";
-import Admin from "../../../assets/controle_faltas_admin.png";
+import statics from "../../../statics";
 
 export default () => (
   <div className="text-justify">
@@ -17,10 +15,10 @@ export default () => (
     </p>
     <div className="row">
       <div className="mt-2 col s12 m12 l6">
-        <img src={Banner} className="z-depth-1 materialboxed" alt="home controle de faltas" />
+        <img src={statics.CONTROLE_FALTAS_HOME} className="z-depth-1 materialboxed" alt="home controle de faltas" />
       </div>
       <div className="mt-2 col s12 m12 l6">
-        <img src={Admin} className="z-depth-1 materialboxed" alt="admin controle de faltas" />
+        <img src={statics.CONTROLE_FALTAS_ADMIN} className="z-depth-1 materialboxed" alt="admin controle de faltas" />
       </div>
     </div>
 
