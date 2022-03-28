@@ -24,7 +24,7 @@ export default function CardEmpresa({ empresa, linkEmpresa, cargoOcupado, dataIn
 
             <div className="conteudo">
                 <div className="titulo">
-                    <h4><a href={linkEmpresa} target="_blank">{empresa}</a></h4>
+                    <h4><a href={linkEmpresa} target="_blank" rel="noopener noreferrer">{empresa}</a></h4>
                     <h6>{cargoOcupado}</h6>
                 </div>
 

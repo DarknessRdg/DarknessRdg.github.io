@@ -60,6 +60,7 @@ export default () => {
         apagarPalavra()
     }
 
+    // eslint-disable-next-line
     useEffect(() => { digitarNovaPalavra() }, [adjetivoAtual])
 
     return <h2 className="m-0 white-text bol">Eu sou {palavra}<span>|</span></h2>

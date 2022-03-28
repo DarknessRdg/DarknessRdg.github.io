@@ -10,7 +10,7 @@ const SOCIAL = [
 export default () => {
     return <div className="links-content">
         {SOCIAL.map(it => <span>
-                <a href={it.link} className="white-text" target="_blank">
+                <a href={it.link} className="white-text" target="_blank" rel="noopener noreferrer">
                     <i className={it.icon} />
                 </a>
             </span>
