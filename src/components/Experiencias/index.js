@@ -6,7 +6,7 @@ import "./style.scss";
 
 export default () => (
     <div className="grey lighten-4">
-        <Section id="experiencia" title="Experiências de trabalho">
+        <Section id="experiencia" title="Experiências">
             <div className="pb-4">
                 <Blu />
                 <Infatec />
