@@ -1,4 +1,6 @@
-$content-width: 50vw;
+$content-width-large-screen: 50vw;
+$content-width-small-screen: 90vw;
+
 $margin: 20px;
 $spacing: 20px;
 $bdrs: 3px;
@@ -9,6 +11,8 @@ $bdrs-icon: 100%;
 
 $color1: #5158ac;
 $color2: #f7f7f7;
+
+$screen-small-size: 600px;
 
 .card-empresa {
     text-align: left;
@@ -38,7 +42,7 @@ $color2: #f7f7f7;
 
         padding: $spacing;
         border-radius: 0 $bdrs $bdrs 0;
-        width: $content-width;
+        width: $content-width-large-screen;
       }
   
       .data {
@@ -57,6 +61,18 @@ $color2: #f7f7f7;
   
       .descricao {
         flex-basis: 60%;
+      }
+
+      @media (max-width: $screen-small-size) {
+        flex-direction: column;
+
+        .data {
+          padding: $spacing 0;
+        }
+
+        .conteudo {
+          width: $content-width-small-screen;
+        }
       }
     }
   }
